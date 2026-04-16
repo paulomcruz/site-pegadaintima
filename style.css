@@ -517,6 +517,16 @@ a {
 
 .experience-card .placeholder-image {
   min-height: 220px;
+  margin-bottom: 1.8rem;
+}
+
+.experience-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+.experience-card p {
+  margin-top: 0;
 }
 
 .image-amigas {

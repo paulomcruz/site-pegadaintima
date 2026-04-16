@@ -4,8 +4,12 @@ const nav = document.querySelector(".main-nav");
 const navLinks = document.querySelectorAll(".main-nav a");
 const sections = document.querySelectorAll("section[id]");
 const revealItems = document.querySelectorAll(".reveal-up, .reveal-left");
-const parallaxTargets = document.querySelectorAll(".hero-media, .media-card, .image-panel");
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const parallaxTargets = document.querySelectorAll(
+  ".hero-media, .media-card, .image-panel",
+);
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+).matches;
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
@@ -50,7 +54,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.2 }
+  { threshold: 0.2 },
 );
 
 revealItems.forEach((item, index) => {
